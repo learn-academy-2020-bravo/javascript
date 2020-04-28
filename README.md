@@ -1,4 +1,5 @@
-# Intro to JavaScript Work Space
+# Week 1: Intro to JavaScript 
+## Bravo Cohort Work Space
 
 Create a new file that is named for the topic you are working on and the names of your teammates. This naming convention will help facilitate navigation and clearly communicate intent.
 
