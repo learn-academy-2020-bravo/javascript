@@ -147,27 +147,101 @@
 // The Pluralizer: Write a function named pluralizer that takes 2 arguments, a number and a singular noun and returns the number and pluralized form of the noun, if necessary
 
 // create function that takes 1 number and 1 singular noun
-const pluralizer = (num, noun) => {
-    let collectiveNouns = ["sheep", "goose", "child", "person","species"]
-    let pluralCollectiveNouns = ["sheep", "geese", "children", "people", "species"]
-    for(let i=0; i<collectiveNouns.length; i++){
-        if(collectiveNouns[i] === noun){
-            return `${num} ${pluralCollectiveNouns[i]}`
-        } 
-    }
-        if (num > 1) {
-            return `${num} ${noun}s`
-        // create a conditional where if number = 1, it returns singular noun
-        } else if (num === 1){
-                return `${num} ${noun}`
-            } else {return "error error error"
-    }
-}          
-console.log(pluralizer(5,"goose"))
-console.log(pluralizer(8, "cat"));
-console.log(pluralizer(1,"mouse"));
-console.log(pluralizer(3, "person"));
-console.log(pluralizer ("pink", "dragon"));
+// const pluralizer = (num, noun) => {
+//     let collectiveNouns = ["sheep", "goose", "child", "person","species"]
+//     let pluralCollectiveNouns = ["sheep", "geese", "children", "people", "species"]
+//     for(let i=0; i<collectiveNouns.length; i++){
+//         if(collectiveNouns[i] === noun){
+//             return `${num} ${pluralCollectiveNouns[i]}`
+//         } 
+//     }
+//         if (num > 1) {
+//             return `${num} ${noun}s`
+//         // create a conditional where if number = 1, it returns singular noun
+//         } else if (num === 1){
+//                 return `${num} ${noun}`
+//             } else {return "error error error"
+//     }
+// }          
+// console.log(pluralizer(5,"goose"))
+// console.log(pluralizer(8, "cat"));
+// console.log(pluralizer(1,"mouse"));
+// console.log(pluralizer(3, "person"));
+// console.log(pluralizer ("pink", "dragon"));
 
 
+// DON'T FORGET TO PSEUDO CODE
 
+// Write a function that takes in an array and returns a new array with all numbers multiplied by 3.
+//  var testArr1 = [3, 9, 15, 4, 10]
+
+ 
+//  // create a function that takes in an array as an argument
+//  const multByThree = (array) => {
+//      // define new array 
+//      let newArray = []
+//      // write a for loop that iterates through array
+//      for(let i = 0; i < array.length; i++){
+//          // multiply array by 3 and pushes the responses to the new array
+//          newArray.push(array[i] * 3)
+
+//      }
+//      // return new array Expected output --> [9, 27, 45, 12, 30]
+//      return newArray
+//  }
+
+//  console.log(multByThree(testArr1));
+ 
+
+
+// Write a function that takes in an array and returns a new array with only odd numbers.
+var testArr2 = [0, 2, -7, 3, 5, 8, 10, 13]
+
+// create a function that takes an array as an argument
+// define a new array
+// create a for loop that iterates through the array and 
+// pull out the ODD numbers using a modulo to === 1
+// 
+
+
+// Expected output --> [-7, 3, 5, 13]
+
+// Write a function that takes in a string and returns a new string with every letter capitalized. HINT: you do not need arrays or loops.
+// var myMessage = "Hello There"
+
+// Expected output --> "HELLO THERE"
+
+// Write a function that takes in an array of numbers and letters and returns a string with only the letters. HINT: use the typeof method
+// var comboArr = [7, "n", true, "i", "c", 10, "e", -388, "w", 3, "o", 0, "r", false, "k"]
+
+// Expected output --> "nicework"
+
+// Create a function that returns the highest number
+// var highestNumber = [1, 45, 4, 2, 7, 67, -9, 0, 6]
+
+// Expected output --> 67
+
+// Create a function that returns the lowest number
+// var lowestNumber = [1, 45, 4, 2, 7, 67, -9, 0, 6]
+
+// Expected output --> -9
+
+// Create a function that calculates the sum
+// var addThese1 = [1, 2, 3, 4]
+
+// Expected output --> 10
+
+// var addThese2 = []
+
+// Expected output --> 0
+
+// Create a function that calculates the mean value
+// var meanChecker = [1, 2, 3] Expected output --> 2
+
+// Create a function that finds the index of the highest number
+// var indexHighestNumber = [1, 4, 2]
+
+// Expected output --> 1
+
+// Create a function that takes in a string and returns only the middle value
+// var testString1 = "hello" Expected output --> "l" var testString2 = "boogeyman" Expected output --> "e"
