@@ -232,25 +232,48 @@ var highestIndex = (array) => {
   var highestNum = Math.max(...array)
   return array.indexOf(highestNum)
 }
-console.log(highestIndex(indexHighestNumber));
+//console.log(highestIndex(indexHighestNumber));
 //
 // Expected output --> 1
 //
 // Create a function that takes in a string and returns only the middle value
-// var testString1 = "hello" Expected output --> "l" var testString2 = "boogeyman" Expected output --> "e"
-//
+ var testString1 = "hello"
+ //Expected output --> "l"
+ var testString2 = "boogeyman"
+ //Expected output --> "e"
+
+var middleCharacter = (string)  =>  {
+  let array = string.split('');
+  let index = array.length / 2;
+  return array[Math.floor(index)];
+}
+
+//console.log(middleCharacter(testString1))
+//console.log(middleCharacter(testString2))
+
+
 // STRETCH Challenges
 // Palindrome: Create a function that takes in a string and determines whether the string is a palindrome (the same word forward and backwards)
-// var isPalindrome1 = "racecar"
+ var isPalindrome1 = "racecar"
 //
 // Expected output --> "Yes racecar is a palindrome"
 //
-// var isPalindrome2 = "albatross"
+ var isPalindrome2 = "albatross"
 //
 // Expected output --> "No albatross is not a palindrome"
-//
+
+var isPalindrome = (string) =>  {
+  return string == string.split('').reverse().join('') ? `Yes ${string} is a palindrome` : `No, ${string} is not a palindrome`;
+}
+
+//console.log(isPalindrome(isPalindrome1))
+//console.log(isPalindrome(isPalindrome2))
+
+
+
+
 // Vowels Removed: Create a function that takes in a string and returns a new string with all the vowels removed
-// var fullString1 = "javascript is awesome"
+ var fullString1 = "javascript is awesome"
 //
 // Expected output --> "jvscrpt s wsm"
 //
