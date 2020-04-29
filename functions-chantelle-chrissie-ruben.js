@@ -78,3 +78,20 @@
 // console.log(divisibleBy(-24, 7))
 
 // Write a function named assignGrade that takes a number score as an argument and returns the letter grade for the score.
+
+//create a function named assignGrade that take a number score
+const assignGrade =(score) =>{
+    if(score >= 100){
+        return "Wow you smarty pants, you got an A+"
+    } else if (score > 89){
+        return "You got an A"
+    } else if (score > 79) {
+        return "You got a B. You should try harder."
+    } else if (score > 69) {
+        return "C student, huh? Welcome to the world of fast food."
+    } else if (score <= 69) {
+        return "You did so bad, we're not even giving you a letter grade."
+    } else {"Something went terribly wrong."}
+}
+console.log(assignGrade(10));
+
