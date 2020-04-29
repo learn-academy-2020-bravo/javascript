@@ -187,42 +187,93 @@ var highestNum = (array) => {
 //console.log(highestNum(highestNumber));
 
 // Create a function that returns the lowest number
-// var lowestNumber = [1, 45, 4, 2, 7, 67, -9, 0, 6]
+var lowestNumber = [1, 45, 4, 2, 7, 67, -9, 0, 6]
 //
 // Expected output --> -9
-//
+
+var lowestNum = (array) => {
+  return Math.min(...array);
+}
+// console.log(lowestNum(lowestNumber));
 // Create a function that calculates the sum
-// var addThese1 = [1, 2, 3, 4]
-//
+var addThese1 = [1, 2, 3, 4]
 // Expected output --> 10
-//
+
+var sum = (array) => {
+  let counter = 0
+  for(let i of array) {
+    counter += i
+  }
+  return counter
+}
+
+// console.log(sum(addThese1));
+
 // var addThese2 = []
 //
 // Expected output --> 0
-//
+var mean = (array) => {
+  let counter = 0
+  for(let i of array) {
+    counter += i
+  }
+  return counter / array.length
+}
+
+// console.log(mean(addThese1));
 // Create a function that calculates the mean value
-// var meanChecker = [1, 2, 3] Expected output --> 2
-//
+var meanChecker = [1, 2, 3]
+// console.log(mean(meanChecker));
+
+
 // Create a function that finds the index of the highest number
-// var indexHighestNumber = [1, 4, 2]
+var indexHighestNumber = [1, 4, 2]
+var highestIndex = (array) => {
+  var highestNum = Math.max(...array)
+  return array.indexOf(highestNum)
+}
+//console.log(highestIndex(indexHighestNumber));
 //
 // Expected output --> 1
 //
 // Create a function that takes in a string and returns only the middle value
-// var testString1 = "hello" Expected output --> "l" var testString2 = "boogeyman" Expected output --> "e"
-//
+ var testString1 = "hello"
+ //Expected output --> "l"
+ var testString2 = "boogeyman"
+ //Expected output --> "e"
+
+var middleCharacter = (string)  =>  {
+  let array = string.split('');
+  let index = array.length / 2;
+  return array[Math.floor(index)];
+}
+
+//console.log(middleCharacter(testString1))
+//console.log(middleCharacter(testString2))
+
+
 // STRETCH Challenges
 // Palindrome: Create a function that takes in a string and determines whether the string is a palindrome (the same word forward and backwards)
-// var isPalindrome1 = "racecar"
+ var isPalindrome1 = "racecar"
 //
 // Expected output --> "Yes racecar is a palindrome"
 //
-// var isPalindrome2 = "albatross"
+ var isPalindrome2 = "albatross"
 //
 // Expected output --> "No albatross is not a palindrome"
-//
+
+var isPalindrome = (string) =>  {
+  return string == string.split('').reverse().join('') ? `Yes ${string} is a palindrome` : `No, ${string} is not a palindrome`;
+}
+
+//console.log(isPalindrome(isPalindrome1))
+//console.log(isPalindrome(isPalindrome2))
+
+
+
+
 // Vowels Removed: Create a function that takes in a string and returns a new string with all the vowels removed
-// var fullString1 = "javascript is awesome"
+ var fullString1 = "javascript is awesome"
 //
 // Expected output --> "jvscrpt s wsm"
 //

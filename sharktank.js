@@ -43,21 +43,42 @@
 // console.log(trippleMe(2));
 
 
-// Write a function named multiply that takes two numbers as arguments and returns the result of one of the numbers multiplied by the other.
-  // declare a constant named multiply
-  const multiplier = (num1, num2) => {
-    //  return <nums> with a number multipled by the other
-    return (num1 * num2)
-  }
-  console.log(multiplier (3, 5))
-    //  an argument of <nums>
-    // call the function
-
-
-
+// // Write a function named multiply that takes two numbers as arguments and returns the result of one of the numbers multiplied by the other.
+//   // declare a constant named multiply
+//   const multiplier = (num1, num2) => {
+//     //  return <nums> with a number multipled by the other
+//     return (num1 * num2)
+//   }
+//   console.log(multiplier (3, 5))
+//     //  an argument of <nums>
+//     // call the function
 
 // Write a function named divisibleBy that takes two numbers as arguments and returns whether the first number is evenly divisible by the second so that divisibleBy(10, 5) logs "10 is evenly divisible by 5".
-//
+  //declare constant name divisableBy with num1 and num2
+const divisableBy = (num1 , num2) => {
+  //if the answer is greater then 0 return string num1 is not evently divisable by num 2
+  if (num1 % num2 === 0){
+    return `${num1} is evenly divisable by ${num2}`
+  }
+  // else if the answer is 0 then num 1 is evenly divisable by num 2
+  else if (num1 % num2 > 0 || num1 % num2 < 0){
+    return `${num1} is not evenly divisable by ${num2}`
+  }
+  //else return this system is broken
+  else {
+    return "you broke everything good job"
+  }
+
+}
+//call the function
+console.log(divisableBy(3,7));
+
+
+
+
+
+
+
 // Write a function named assignGrade that takes a number score as an argument and returns the letter grade for the score.
 //
 // delcare a constant named "marco"
