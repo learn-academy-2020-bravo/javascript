@@ -10,12 +10,27 @@
 // console.log(groceryList);
 //
 
-var numbers = [2, 4, 6, 8, 10];
+// var numbers = [2, 4, 6, 8, 10];
+//
+// //numbers.unshift(0)
+// //console.log(numbers);
+//
+// numbers.push(12);
+// console.log(numbers)
+// numbers.shift();
+// console.log(numbers);
 
-//numbers.unshift(0)
-//console.log(numbers);
+// var chars = ['y', 'a', 'r', 'r', 'a'];
+//
+//
+// console.log(chars.join(""));
+//
+// var charsReverse = chars.reverse()
+// console.log(charsReverse)
 
-numbers.push(12);
-console.log(numbers)
-numbers.shift();
-console.log(numbers);
+var array1 = ['zaron', 'chrissie', 'omas'];
+var array2 = ['austin', 'jazymn', 'april'];
+
+//console.log(array1.sort());
+var combineArray = array1.concat(array2);
+console.log(combineArray.sort().reverse());
