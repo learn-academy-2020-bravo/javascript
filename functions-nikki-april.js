@@ -46,8 +46,22 @@
 // console.log (triple(3))
 
 //declare a function called multiply that takes two numbers as arguments
- const multiply =(number1,number2) => {
-   //returns the result of one of the numbers mutiplied by the other
-   return (number1 * number2)
-  }
-  console.log(multiply(3 , 2))
+ // const multiply =(number1,number2) => {
+ //   //returns the result of one of the numbers mutiplied by the other
+ //   return (number1 * number2)
+ //  }
+ //  console.log(multiply(3 , 2))
+
+ //Write a function named divisibleBy that takes two numbers as arguments
+
+ const divisibleBy = (number1, number2) => {
+   if(number1 %number2 === 0){
+     //returns whether the first number is evenly divisible by the second
+     return `${number1} is evenly divisable bye ${number2}`
+   } else{
+     return `${number1} is not evenly divisable bye ${number2}`
+   }
+ }
+  console.log(divisibleBy(3,6))
+
+ //divisibleBy(10, 5) logs "10 is evenly divisible by 5".
