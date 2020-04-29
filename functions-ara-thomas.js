@@ -95,6 +95,21 @@ const helloWorld = (string) =>  {
 
 // The Pluralizer: Write a function named pluralizer that takes 2 arguments, a number and a singular noun and returns the number and pluralized form of the noun, if necessary
 //
+
+const pluralizer = (num, noun) => {
+  if (num == 1) {
+    return "1 " + noun;
+  }
+  if (noun == "goose") {
+    return `${num} geese`
+  }
+  return `${num} ${noun}s`
+
+}
+console.log(pluralizer(1, "dog"));
+console.log(pluralizer(5, "cat"));
+console.log(pluralizer(0, "bat"));
+console.log(pluralizer(2, "goose"));
 // const pluralizer = (5, cat)
 //
 // Expected outcome --> "5 cats"
