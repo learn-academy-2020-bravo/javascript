@@ -19,6 +19,8 @@
 // // var numberEnd = numbers.push("12")
 // // var numberShift = numbers.shift()
 // // console.log(numbers);
+
+
 // Logging values with for loops
 // Write a for loop that logs each number from 1 - 20.
 // Write a for loop that logs the result of each number from 1 - 20 tripled.
@@ -31,3 +33,17 @@
 // Looping over a string. Consider this variable:
 // var myString = "learn student"
 // Write the code that will log the number of times the letter "e" occurs in the string. Expected output --> 2
+for (let i= 1; i<21; i++){
+  if(i%2===1){
+    console.log("ODD")
+  }
+  else {
+    console.log(i);
+  }
+}
+
+// for(let i=0; i<arr.length; i++){
+//   if(arr[i] !==5){
+//     console.log(arr[i])
+//   }
+// }
