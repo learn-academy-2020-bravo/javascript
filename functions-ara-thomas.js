@@ -187,24 +187,52 @@ var highestNum = (array) => {
 //console.log(highestNum(highestNumber));
 
 // Create a function that returns the lowest number
-// var lowestNumber = [1, 45, 4, 2, 7, 67, -9, 0, 6]
+var lowestNumber = [1, 45, 4, 2, 7, 67, -9, 0, 6]
 //
 // Expected output --> -9
-//
+
+var lowestNum = (array) => {
+  return Math.min(...array);
+}
+// console.log(lowestNum(lowestNumber));
 // Create a function that calculates the sum
-// var addThese1 = [1, 2, 3, 4]
-//
+var addThese1 = [1, 2, 3, 4]
 // Expected output --> 10
-//
+
+var sum = (array) => {
+  let counter = 0
+  for(let i of array) {
+    counter += i
+  }
+  return counter
+}
+
+// console.log(sum(addThese1));
+
 // var addThese2 = []
 //
 // Expected output --> 0
-//
+var mean = (array) => {
+  let counter = 0
+  for(let i of array) {
+    counter += i
+  }
+  return counter / array.length
+}
+
+// console.log(mean(addThese1));
 // Create a function that calculates the mean value
-// var meanChecker = [1, 2, 3] Expected output --> 2
-//
+var meanChecker = [1, 2, 3]
+// console.log(mean(meanChecker));
+
+
 // Create a function that finds the index of the highest number
-// var indexHighestNumber = [1, 4, 2]
+var indexHighestNumber = [1, 4, 2]
+var highestIndex = (array) => {
+  var highestNum = Math.max(...array)
+  return array.indexOf(highestNum)
+}
+console.log(highestIndex(indexHighestNumber));
 //
 // Expected output --> 1
 //
