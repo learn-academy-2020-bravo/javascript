@@ -107,8 +107,9 @@ const pluralizer = (num, noun) => {
   }
   else {
     return `${num} ${noun}s`
-  }
+ }
 }
+
 console.log(pluralizer(10, "sheep"));
 console.log(pluralizer(20, 'child'));
 // console.log(pluralizer(5, "cat"));
