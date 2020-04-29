@@ -36,7 +36,7 @@
 // console.log(oddOrEven(664))
 
 
-// Write a function named triple that takes a number as an argument and returns the result of that number multiplied by 3.
+
 
 //declare a function names triple that takes a number as an arguement
 // const triple = (number) => {
@@ -44,3 +44,10 @@
 //   return (number * 3)
 // }
 // console.log (triple(3))
+
+//declare a function called multiply that takes two numbers as arguments
+ const multiply =(number1,number2) => {
+   //returns the result of one of the numbers mutiplied by the other
+   return (number1 * number2)
+  }
+  console.log(multiply(3 , 2))
