@@ -274,25 +274,57 @@ var isPalindrome = (string) =>  {
 
 // Vowels Removed: Create a function that takes in a string and returns a new string with all the vowels removed
  var fullString1 = "javascript is awesome"
-//
+
+
 // Expected output --> "jvscrpt s wsm"
 //
-// var fullString2 = "I am a LEARN student"
+var fullString2 = "I am a LEARN student"
 //
 // Expected output --> "m LRN stdnt"
-//
+
+var vowelsRemoved = (string) => {
+  var arr = string.split("")
+  let vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"]
+  let newArr = []
+  for(let i of arr) {
+    if(vowels.indexOf(i) == -1) {
+      newArr.push(i)
+    }
+  }
+  return newArr.join("")
+}
+//console.log(vowelsRemoved(fullString1));
+//console.log(vowelsRemoved(fullString2));
 // Merge Arrays: Create a function that takes in two arrays as arguments and returns one array with no duplicate values.
-// var arr1 = [3, 7, 10, 5, 4, 3, 3]
-//
-// var arr2 = [7, 8, 2, 3, 1, 5, 4]
+var arr1 = [3, 7, 10, 5, 4, 3, 3, 96]
+
+var arr2 = [7, 8, 2, 3, 1, 5, 4]
+
+var mergedArr = (arr1, arr2) => {
+  let arr3 = arr1.concat(arr2)
+  let uniqueSet = new Set(arr3)
+  return [...uniqueSet]
+}
+//console.log(mergedArr(arr1, arr2));
 //
 // Expected output --> [3, 7, 10, 5, 4, 8, 2, 1]
 //
 // Clean Function: Create a function that filters false, null, 0 and blank values from an array.
-// var filterArrayValues = [58, " ", "abcd", true, null, false, 0]
+var filterArrayValues = [58, " ", "abcd", true, null, false, 0]
 //
 // Expected output --> [58, "abcd", true]
-//
+
+var filter = (array) => {
+  let answer = [];
+  for (let i of array)  {
+    if (i == false || i == null || i == 0 || i == ' ')  continue;
+    answer.push(i)
+  }
+  return answer;
+}
+
+//console.log(filter(filterArrayValues))
+
 // Pre-fill: Write a function that takes in two numbers as arguments and returns an array the length of the first number filled with the second number.
 // fillArray = (6, 0)
 //
@@ -301,6 +333,15 @@ var isPalindrome = (string) =>  {
 // fillArray = (4, 11)
 //
 // expected output --> [11, 11, 11, 11]
+
+var fillArray = (num1, num2)  =>  {
+  return new Array(num1).fill(num2);
+}
+
+//console.log(fillArray(4,11))
+//console.log(fillArray(6,0))
+
+
 //
 // Create a function named addUp that takes a number as an argument. Add up all the numbers from 1 to the number you passed to the function. For example, if the input is 4 then your function should return 10 because 1 + 2 + 3 + 4 = 10.
 // addUp = (4)
@@ -314,7 +355,19 @@ var isPalindrome = (string) =>  {
 // addUp = (600)
 //
 // Expected output --> 180300
-//
+
+var adder = (num) =>  {
+  let sum = num
+  for (let i = 1; i < num; i++) {
+    sum += i;
+  }
+  return sum;
+}
+
+console.log(adder(4))
+console.log(adder(13))
+
+
 // EPIC Challenge
 // High/Low Game
 // Create an HTML page and link your JavaScript file
