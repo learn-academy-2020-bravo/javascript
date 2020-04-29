@@ -71,3 +71,19 @@ for(i = 0; i <= 100; i++){
   console.log("fizzBUZZZ")
   }
 }
+
+
+for(i = 1; i < 101; i++) {
+  if (i % 15 === 0) {
+    console.log("fizzBUZZ")
+  }
+  else if (i % 3 === 0) {
+    console.log("fizz")
+  }
+  else if (i % 5 === 0) {
+    console.log("BUZZ")
+  }
+  else {
+    console.log(i);
+  }
+}
