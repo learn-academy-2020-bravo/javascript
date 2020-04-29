@@ -13,3 +13,19 @@ var numbers2 = numbers
 console.log(numbers2);
 numbers2.unshift(0);
 console.log(numbers2);
+
+
+var numSet = [2, 13, 6, 8, 4, 2]
+
+console.log(numSet.indexOf(2))
+console.log(numSet.lastIndexOf(2))
+
+var chars = ["y", "a", "r", "r", "a"]
+
+console.log(chars.join(""));
+
+var charsReversed = chars.reverse()
+console.log(charsReversed)
+
+var newCharReversed = charsReversed.join("")
+console.log(newCharReversed)
