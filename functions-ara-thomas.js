@@ -274,17 +274,38 @@ var isPalindrome = (string) =>  {
 
 // Vowels Removed: Create a function that takes in a string and returns a new string with all the vowels removed
  var fullString1 = "javascript is awesome"
-//
+
+
 // Expected output --> "jvscrpt s wsm"
 //
-// var fullString2 = "I am a LEARN student"
+var fullString2 = "I am a LEARN student"
 //
 // Expected output --> "m LRN stdnt"
-//
+
+var vowelsRemoved = (string) => {
+  var arr = string.split("")
+  let vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"]
+  let newArr = []
+  for(let i of arr) {
+    if(vowels.indexOf(i) == -1) {
+      newArr.push(i)
+    }
+  }
+  return newArr.join("")
+}
+console.log(vowelsRemoved(fullString1));
+console.log(vowelsRemoved(fullString2));
 // Merge Arrays: Create a function that takes in two arrays as arguments and returns one array with no duplicate values.
-// var arr1 = [3, 7, 10, 5, 4, 3, 3]
-//
-// var arr2 = [7, 8, 2, 3, 1, 5, 4]
+var arr1 = [3, 7, 10, 5, 4, 3, 3, 96]
+
+var arr2 = [7, 8, 2, 3, 1, 5, 4]
+
+var mergedArr = (arr1, arr2) => {
+  let arr3 = arr1.concat(arr2)
+  let uniqueSet = new Set(arr3)
+  return [...uniqueSet]
+}
+console.log(mergedArr(arr1, arr2));
 //
 // Expected output --> [3, 7, 10, 5, 4, 8, 2, 1]
 //
