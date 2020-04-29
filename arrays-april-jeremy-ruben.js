@@ -57,3 +57,10 @@
 // var charsReversed = chars.reverse()
 //
 // console.log(charsReversed.join(""))
+
+// var nameArray1 = ["Jeremy", "Ruben", "April"]
+// var nameArray2 = ["Aaron", "Ara", "Chantelle"]
+//
+// // console.log(nameArray1.sort().reverse())
+//
+// console.log(nameArray1.concat(nameArray2).sort())
