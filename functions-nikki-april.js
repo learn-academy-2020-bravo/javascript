@@ -54,14 +54,52 @@
 
  //Write a function named divisibleBy that takes two numbers as arguments
 
- const divisibleBy = (number1, number2) => {
-   if(number1 %number2 === 0){
-     //returns whether the first number is evenly divisible by the second
-     return `${number1} is evenly divisable bye ${number2}`
-   } else{
-     return `${number1} is not evenly divisable bye ${number2}`
-   }
- }
-  console.log(divisibleBy(3,6))
+ // const divisibleBy = (number1, number2) => {
+ //   if(number1 %number2 === 0){
+ //     //returns whether the first number is evenly divisible by the second
+ //     return `${number1} is evenly divisable bye ${number2}`
+ //   } else{
+ //     return `${number1} is not evenly divisable bye ${number2}`
+ //   }
+ // }
+ //  console.log(divisibleBy(3,6))
+  //divisibleBy(10, 5) logs "10 is evenly divisible by 5".
 
- //divisibleBy(10, 5) logs "10 is evenly divisible by 5".
+
+//Write a function named assignGrade that takes a number score as an argument
+//create variables to define range of number per assigned grade letter
+//returns the letter grade for the score
+
+
+// const assignGrade = (numberScore) => {
+//   if (numberScore <= 100 && numberScore >= 90){
+//     return "You got an A, Congratulations!"
+//   } else if (numberScore <= 89 && numberScore >= 80){
+//     return "You got an B, Great job!"
+//   } else if (numberScore <= 79 && numberScore >= 70){
+//     return "You got a C, time to study more!"
+//   } else {
+//     return "You have failed this class"}
+// }
+// console.log(assignGrade(0))
+
+
+var testArr1 = [3, 9, 15, 4, 10]
+//Write a function that takes in an array
+const mult3 = (array) => {
+  //define the new array as an array
+  let newArr = []
+  //tell the loop to stop after the legth of the array
+  for(let i=0; i<array.length; i++){
+  //push the test array through one increments at a time and multiply by 3
+    newArr.push(array[i] * 3)
+  }
+  // and returns a new array with all numbers multiplied by 3.
+  return newArr
+}
+//console log it to check it its working
+console.log(mult3(testArr1))
+
+
+
+// Expected output --> [9, 27, 45, 12, 30]
