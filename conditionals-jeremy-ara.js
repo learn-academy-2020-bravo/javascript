@@ -1,4 +1,4 @@
-var item = 110
+ var item = 110
 if (item <= 100) {
   console.log("In budget")
 } else {
