@@ -47,7 +47,7 @@ var str = "javascript is awesome"
 const vowelsRemoved = (string) => {
   // Declare array variable that holds each vowel
   let vowels = ["a", "e", "i", "o", "u"]
-  // Push string into array via declaring empty array
+  // Declare empty array to hold string
   let strArray = []
   // Use push method to push string into empty array
   strArray.push(string)
