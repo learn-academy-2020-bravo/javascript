@@ -279,18 +279,104 @@ var indexHighestNumber = [1, 4, 2];
 // console.log(palindrome(isPalindrome2))
 
 
-// Declare function takes in string
-// Declare new string variable
-// Return string w/ all vowels removed
+// // Declare function takes in string
+// // Declare new string variable
+// // Return string w/ all vowels removed
 
 var fullString1 = "javascript is awesome"
 var fullString2 = "I am a LEARN student"
 
 const noVowels = (str) => {
-  let array = str.split("")
-  for (let i=0; i < array.length; i++) {
-    if (array[i].includes("a")) {
-      array[i].pop()
+  let strArray = str.split("")
+  for (let i=0; i < strArray.length; i++) {
+    if (strArray[i].toUpperCase() === "A") {
+      strArray.splice(i, 1)
+    } else if (strArray[i].toUpperCase() === "E") {
+      strArray.splice(i, 1)
+    } else if (strArray[i].toUpperCase() === "I") {
+      strArray.splice(i, 1)
+    } else if (strArray[i].toUpperCase() === "O") {
+      strArray.splice(i, 1)
+    } else if (strArray[i].toUpperCase() === "U") {
+      strArray.splice(i, 1)
     }
   }
+  return strArray.join("")
 }
+
+console.log(noVowels(fullString1))
+console.log(noVowels(fullString2))
+
+
+// var arr1 = [3, 7, 10, 5, 4, 3, 3]
+// var arr2 = [7, 8, 2, 3, 1, 5, 4]
+//
+// // Declare function that takes in two arrays as arguments
+// const noDuplicates = (arr1, arr2) => {
+//   // Declare new array that concats two arrays
+//   let combined = arr1.concat(arr2)
+//   // Declare new array that holds new array w/ no duplicates
+//   let newArray = []
+//   // Iterate through indexes of new array
+//   for (let i=0; i < combined.length; i++) {
+//     // Check if current index number equals the .indexOf of same value
+//     if (i === combined.indexOf(combined[i])) {
+//       // Use .push to add value to end of new array
+//       newArray.push(combined[i])
+//     }
+//   }
+//   // Return new array
+//   return newArray
+// }
+//
+// console.log(noDuplicates(arr1, arr2))
+
+// var filterArrayValues = [58, " ", "abcd", true, null, false, 0]
+//
+// // Declare function that filters false, null, 0 and blank values from an array
+// const filtersOut = (arr) => {
+//   // Declare locally new array as variable
+//   let filteredArray = []
+//   // Iterate through indexes of original array
+//   for (let i = 0; i < arr.length; i++) {
+//     // Check if value doesn't include false, null, 0 or blank
+//     if (arr[i] !== false && arr[i] !== null && arr[i] !== 0 && arr[i] !== "" && arr[i] !== " ") {
+//       // Push that value to end of new array
+//       filteredArray.push(arr[i])
+//     }
+//   }
+//   return filteredArray
+// }
+//
+// console.log(filtersOut(filterArrayValues))
+
+// // Declare function that takes two numbers as args
+// const preFill = (num1, num2) => {
+//   // Declare new empty array as a variable
+//   let newArray = []
+//   // Create For loop that will iterate up until the index number that is 1 less than num1
+//   for (let i=0; i < num1; i++) {
+//     // Use push to add num2 as new item to end of new array
+//     newArray.push(num2)
+//   }
+//   return newArray
+// }
+//
+// console.log(preFill(6,0))
+// console.log(preFill(4,11))
+
+// // Declare function named addUp that takes number as arg
+// const addUp = (num) => {
+//   // Declare new variable equal to zero
+//   let total = 0
+//   // Create for loop that iterates from 1 up to the number chosen
+//   for (let i=1; i <= num; i++) {
+//     // Add each index number to the zero variable
+//     total += i
+//   }
+//   return total
+// }
+//
+// console.log(addUp(4))
+// console.log(addUp(13))
+// console.log(addUp(600))
