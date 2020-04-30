@@ -278,6 +278,37 @@ var indexHighestNumber = [1, 4, 2];
 // console.log(palindrome(isPalindrome1))
 // console.log(palindrome(isPalindrome2))
 
+<<<<<<< HEAD
+const middleValue = (str) => {
+  var array = str.split("");
+  //console.log(array)
+  var midIndex = 0;
+  for (let i = 0; i < array.length; i++) {
+    midIndex += i;
+    console.log(midIndex)
+  }
+}
+
+//console.log(middleValue(testString1));
+
+
+var fullString1 = "javascript is awesome"
+
+const noVowel = (str) => {
+  var splitString = str.split("");
+  var array = [];
+var newArray = ['a', 'e', 'i', 'o', 'u']
+
+  for (let i = 0; i < str.length; i++) {
+    if (splitString[i] !== "a" && splitString[i] !== "e")  {
+      array.push(splitString[i])
+    }
+  }
+  return array.join("")
+}
+
+console.log(noVowel(fullString1))
+=======
 
 // // Declare function takes in string
 // // Declare new string variable
@@ -303,6 +334,7 @@ const noVowels = (str) => {
   }
   return strArray.join("")
 }
+<<<<<<< HEAD
 
 console.log(noVowels(fullString1))
 console.log(noVowels(fullString2))
@@ -380,3 +412,6 @@ console.log(noVowels(fullString2))
 // console.log(addUp(4))
 // console.log(addUp(13))
 // console.log(addUp(600))
+=======
+>>>>>>> 16f15b8f259c9b9977eab24d16708aeae7666dec
+>>>>>>> 46d3ce189204269889718664d22f6d7d4cd66f88

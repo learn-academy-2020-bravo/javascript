@@ -29,3 +29,5 @@ console.log(charsReversed)
 
 var newCharReversed = charsReversed.join("")
 console.log(newCharReversed)
+
+var names1 = ["nikki"]
