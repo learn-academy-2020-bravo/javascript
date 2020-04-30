@@ -55,7 +55,7 @@ const vowelsRemoved = (string) => {
   let splitArray = strArray[0].split("")
   // Declare local array that filters through the split Array
   let vowelArray = splitArray.filter(value => {
-    // Return values that don't equal "a" "e" "i" "o" "u"
+    // Return values that have an actual index number within the vowels array, i.e. index < 0
     return vowels.indexOf(value) < 0
   })
   // Join the split array into one index, then convert array to string
@@ -63,4 +63,3 @@ const vowelsRemoved = (string) => {
 }
 
 console.log(vowelsRemoved(str))
-// Declare local variable eachLetter that maps through our string
