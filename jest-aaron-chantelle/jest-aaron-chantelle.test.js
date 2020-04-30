@@ -1,5 +1,7 @@
 // Write the test for a function that returns "drink coffee" if you are tired and "keep working" if you are not tired. Write the function that will make the test pass.
 
+//import { TestScheduler } from "jest"
+
 // describe ("coffeeTime", () => {
 //     test ("returns drink coffee if you are tired, and keep working if you are not tired", () => {
 //         expect (coffeeTime("yes")).toEqual("drink coffee")
@@ -37,6 +39,24 @@
 // --------------------------------------
 
 // Write the test for a function that returns "in budget" if a price is lower than $300. Write the function that will make the test pass.
+// describe ("inBudget", () => {
+//     test ("should return in budget if less than 300", () => {
+//             expect (inBudget(50)).toEqual("you are within the budget")
+//             expect (inBudget(350)).toEqual("you are above the budget")
+//         })   
+//     })
+
+// const inBudget = (num) => {
+//     if (num < 300) {
+//         return "you are within the budget"
+//     }
+//     else {
+//         return "you are above the budget"
+//     }
+// } 
+
+// inBudget(50);
+// inBudget(350);
 
 // --------------------------------------
 
