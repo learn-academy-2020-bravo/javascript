@@ -62,9 +62,47 @@
 
 // Write the test for a function that takes in two arguments(numbers) and returns the smaller number. Write the function that will make the test pass.
 
+// describe ("lessThan", () => {
+//     test ("should return the smallest number of two arguments", () => {
+//         expect (lessThan(4,5)).toEqual(4)
+//         expect (lessThan(6,5)).toEqual(5)
+//     })
+// })
+
+// const lessThan = (num1, num2) => {
+//     if (num1 < num2) {
+//         return num1
+//     }
+//     else {
+//         return num2
+//     }
+// }
+
+// lessThan(4,5)
+// lessThan(6,5)
+
 // --------------------------------------
 
 // Write the test for a function that takes in one argument(number) and returns whether the number is odd. Write the function that will make the test pass.
+
+// describe("isItOdd", () => {
+//     test ("should return a odd number if the number is odd", () => {
+//         expect (isItOdd(7)).toEqual("odd")
+//         expect (isItOdd(2)).toEqual("not odd")
+//     })
+// })
+
+// const isItOdd = (num) => {
+//     if (num % 2 === 1) {
+//         return "odd"
+//     }
+//     else {
+//         return "not odd"
+//     }
+// }
+
+// isItOdd(7)
+// isItOdd(2)
 
 // --------------------------------------
 
