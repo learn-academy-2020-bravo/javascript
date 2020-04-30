@@ -21,14 +21,31 @@ var onlyOdd = (array) =>  {
 //console.log(onlyOdd(arr2));
 
 // Write a function that takes in an array of numbers and letters and returns a string with only the letters. HINT: Use typeof method
-// var comboArr = [7, "n", "i", "c", 10, "e", false, "w", 3, "o", "r", "k"] Expected output --> "nicework"
+//   var comboArr = [7, "n", "i", "c", 10, "e", false, "w", 3, "o", "r", "k"] 
+// //Expected output --> "nicework"
+
+// const onlyLetters = (array) => {
+//   return array.filter(value => typeof (value) === "string").join("")
+
+// }
+// console.log(onlyLetters(comboArr))
+
+
 //
 // STRETCH Challenges
 // Create a function that takes in a string and returns a new string with all the vowels removed.
-// var str = "javascript is awesome"
+ var str = "javascript is awesome"
 //
 // Expected output --> "jvscrpt s wsm"
-//
+
+const noVowels = (string) => {
+  let vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"]
+  let array = string.split("")
+  return array.filter(value => vowels.indexOf(value) === -1).join("")
+}
+
+console.log(noVowels(str));
+
 // Create a function that takes in two arrays as arguments returns one array with no duplicate values.
 // var arr1 = [3, 7, 10, 5, 4, 3]
 //
