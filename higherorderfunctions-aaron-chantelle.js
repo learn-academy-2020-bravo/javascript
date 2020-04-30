@@ -46,9 +46,44 @@ const combineString = (array) => {
 console.log(combineString(comboArr));
 
 
+
 // STRETCH Challenges
 // Create a function that takes in a string and returns a new string with all the vowels removed.
-// var str = "javascript is awesome"
+
+// var str = "jAvAscript is aWesome I dont like vowels haahah"
+
+// const noVowel = (str) => {
+//   var splitString = str.split("");
+//   var array = [];
+//   //var newArray = ['a', 'e', 'i', 'o', 'u']
+//
+//   for (let i = 0; i < str.length; i++) {
+//     if (splitString[i] !== "a" && splitString[i] !== "e")  {
+//       array.push(splitString[i])
+//     }
+//   }
+//   return array.join("")
+// }
+
+// var str = "jAvAscript is aWesome I dont like vowels haahah"
+//
+// const disemvowel = (str) => {
+//   var newArray = ['a', 'e', 'i', 'o', 'u'];
+//
+//   return str
+//   .split("") //creates an array
+//   .filter(char => !newArray.includes(char.toLowerCase())) //filtering out letters that are in newArray that are also in str
+//
+//   .join("")
+// }
+//
+// console.log(disemvowel(str))
+//
+
+//console.log(noVowel(str))
+
+//create a function that takes a string
+//
 
 // Expected output --> "jvscrpt s wsm"
 
