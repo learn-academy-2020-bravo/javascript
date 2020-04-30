@@ -89,6 +89,26 @@ console.log(noDups(arr1,arr2));
 
 
 
+<<<<<<< HEAD
+console.log(vowelsRemoved(str))
+
+//Create a function that takes in two arrays as arguments returns one array with no duplicate values.
+var arr1 = [3, 7, 10, 5, 4, 3]
+var arr2 = [7, 8, 2, 1, 5, 4]
+
+// Declare function that takes in two arrays
+const noDups = (array1, array2) => {
+  // Declare new array variable that concats the two arrays
+  let combined = array1.concat(array2)
+  // Filter through new array using value and index
+  return combined.filter((value, index) => {
+    return combined.indexOf(value) == index
+  })
+  // Return only values where the index of the first location of that value equals the current index being looped through
+}
+
+console.log(noDups(arr1, arr2))
+=======
 
 // Expected output -> [3, 7, 10, 5, 4, 8, 2, 1]
 //
@@ -110,3 +130,4 @@ console.log(noDups(arr1,arr2));
 //
 //
 //
+>>>>>>> d110d2f55ebe687a050579843302f3a6b35fe27c
