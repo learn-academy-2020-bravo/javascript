@@ -30,11 +30,36 @@ describe("stressed", () => {
         } else if(string === "not stressed") {
             return "keep going"
         }
-    }  
+    }
 
 // Write the test for a function that returns "in budget" if a price is lower than $300. Write the function that will make the test pass.
 
+describe("inBudget", () => {
+    test("return in budget if input is lower than 300.", () => {
+      expect(inBudget(200)).toEqual("in budget")
+      expect(inBudget(300)).toEqual("out of budget")
+      expect(inBudget(400)).toEqual("out of budget")
+    })
+  })
+
+  var inBudget = (num) => {
+    if (num < 300)  return ("in budget");
+    return "out of budget";
+  }
+
 // Write the test for a function that takes in two arguments(numbers) and returns the smaller number. Write the function that will make the test pass.
+
+describe("smallerNum", () => {
+    test("returns smallest number.", () => {
+      expect(smallerNum(2,10)).toEqual(2)
+      expect(smallerNum(18,90)).toEqual(18)
+      expect(smallerNum(50,50)).toEqual(50)
+    })
+  })
+
+  const smallerNum = (num1, num2) =>  {
+    return Math.min(num1,num2);
+  }
 
 // Write the test for a function that takes in one argument(number) and returns whether the number is odd. Write the function that will make the test pass.
 
