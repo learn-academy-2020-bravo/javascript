@@ -55,23 +55,23 @@
 
 // Write a function named divisibleBy that takes two numbers as arguments and returns whether the first number is evenly divisible by the second so that divisibleBy(10, 5) logs "10 is evenly divisible by 5".
   //declare constant name divisableBy with num1 and num2
-const divisableBy = (num1 , num2) => {
-  //if the answer is greater then 0 return string num1 is not evently divisable by num 2
-  if (num1 % num2 === 0){
-    return `${num1} is evenly divisable by ${num2}`
-  }
-  // else if the answer is 0 then num 1 is evenly divisable by num 2
-  else if (num1 % num2 > 0 || num1 % num2 < 0){
-    return `${num1} is not evenly divisable by ${num2}`
-  }
-  //else return this system is broken
-  else {
-    return "you broke everything good job"
-  }
-
-}
-//call the function
-console.log(divisableBy(3,7));
+// const divisableBy = (num1 , num2) => {
+//   //if the answer is greater then 0 return string num1 is not evently divisable by num 2
+//   if (num1 % num2 === 0){
+//     return `${num1} is evenly divisable by ${num2}`
+//   }
+//   // else if the answer is 0 then num 1 is evenly divisable by num 2
+//   else if (num1 % num2 > 0 || num1 % num2 < 0){
+//     return `${num1} is not evenly divisable by ${num2}`
+//   }
+//   //else return this system is broken
+//   else {
+//     return "you broke everything good job"
+//   }
+//
+//
+// //call the function
+// console.log(divisableBy(3,7));
 
 
 

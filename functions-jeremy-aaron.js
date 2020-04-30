@@ -250,8 +250,35 @@ var indexHighestNumber = [1, 4, 2];
 //iterate through the array
 //count the length
 
-var testString1 = "hello";
+// var testString1 = "hello";
+// var testString2 = "boogeyman"
+//
+// const middleValue = (str) => {
+//   let array = str.split("");
+//   //console.log(array)
+//   let length = array.length / 2
+//   let midIndex = Math.floor(length)
+//   return array[midIndex]
+// }
+//
+// console.log(middleValue(testString2));
 
+// var isPalindrome1 = "racecar"
+// var isPalindrome2 = "albatross"
+//
+// const palindrome = (str) => {
+//   let reverse = str.split("").reverse().join("")
+//   if (str === reverse) {
+//     return "Yes"
+//   } else {
+//     return "No"
+//   }
+// }
+//
+// console.log(palindrome(isPalindrome1))
+// console.log(palindrome(isPalindrome2))
+
+<<<<<<< HEAD
 const middleValue = (str) => {
   var array = str.split("");
   //console.log(array)
@@ -281,3 +308,21 @@ var newArray = ['a', 'e', 'i', 'o', 'u']
 }
 
 console.log(noVowel(fullString1))
+=======
+
+// Declare function takes in string
+// Declare new string variable
+// Return string w/ all vowels removed
+
+var fullString1 = "javascript is awesome"
+var fullString2 = "I am a LEARN student"
+
+const noVowels = (str) => {
+  let array = str.split("")
+  for (let i=0; i < array.length; i++) {
+    if (array[i].includes("a")) {
+      array[i].pop()
+    }
+  }
+}
+>>>>>>> 16f15b8f259c9b9977eab24d16708aeae7666dec
