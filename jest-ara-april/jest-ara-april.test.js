@@ -12,3 +12,23 @@ const areYouTired = (string) => {
     return "keep working"
   }
 }
+
+// Write the test for a function that returns "relax" if you are stressed and "keep going" if you are not stressed. Write the function that will make the test pass.
+
+//describe a function that takes an argument
+describe("areYouStressed", () => {
+  test("will return relax if you are stressed or keep going if you are not stressed", () => {
+    expect(areYouStressed("yes")).toEqual("relax")
+    expect(areYouStressed("no")).toEqual("keep going")
+  })
+})
+
+const areYouStressed = (string) => {
+  if(string === "yes") {
+    return "relax"
+  } else {
+    return "keep going"
+  }
+}
+//test what we expect be return
+//expect the outcome
