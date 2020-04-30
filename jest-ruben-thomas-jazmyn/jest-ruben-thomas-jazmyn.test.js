@@ -100,11 +100,58 @@ const fruitColor = (string) => {
 }
 // Write the test for a function called Rick that returns "Morty". Write the function that will make the test pass.
 
+describe("Rick", () => {
+    test("return morty", () => {
+      expect(Rick()).toEqual("Morty")
+    })
+  })
+
+  const Rick = () =>  {
+    return "Morty";
+  }
+
 // Write the test for a function called greeter that takes a name as an argument and returns a greeting with that name to the screen. Write the function that will make the test pass.
+
+describe("greeter", () => {
+    test("returns a greeting", () => {
+      expect(greeter("Thomas")).toEqual("Hello, Thomas.")
+      expect(greeter("Ruben")).toEqual("Hello, Ruben.")
+      expect(greeter("Jazmyn")).toEqual("Hello, Jazmyn.")
+    })
+  })
+
+  const greeter = (name) => {
+    return `Hello, ${name}.`;
+  }
 
 // Write the test for a function called oddOrEven that takes an number as an argument and logs whether the number is odd or even. Write the function that will make the test pass.
 
+describe("oddOrEven", () => {
+    test("returns if number is odd or even", () => {
+      expect(oddOrEven(22)).toEqual("even")
+      expect(oddOrEven(99)).toEqual("odd")
+      expect(oddOrEven(12)).toEqual("even")
+    })
+  })
+
+  const oddOrEven = (num) =>  {
+    if (num % 2 == 0) return "even"
+    return "odd"
+  }
+
 // Write the test for a function called doubler that takes an number and returns the result of the number multiplied by 2. Write the function that will make the test pass.
+
+describe("doubler", () => {
+    test("returns number multiplied by 2", () => {
+      expect(doubler(22)).toEqual(44)
+      expect(doubler(99)).toEqual(198)
+      expect(doubler(12)).toEqual(24)
+    })
+  })
+
+  const doubler = (num) =>  {
+    return num * 2;
+  }
 
 // Write the test for a function called multiply that takes two numbers as arguments and logs the result of one of the numbers multiplied by the other. Write the function that will make the test pass.
 
