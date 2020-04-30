@@ -62,9 +62,42 @@ describe("smallerNum", () => {
   }
 
 // Write the test for a function that takes in one argument(number) and returns whether the number is odd. Write the function that will make the test pass.
+describe("oddNum", () => {
+    test("number is odd", () => {
+      expect(oddNum(2)).toEqual("not odd")
+      expect(oddNum(11)).toEqual("odd")
+    })
+  })
+
+  const oddNum = (num) => {
+    if(num%2 !== 0) {
+      return "odd"
+    }
+    else {
+      return "not odd"
+    }
+  }
 
 // Write the test for a function that takes in a fruit and returns yellow if the argument is banana, red if apple and purple if grape. Write the function that will make the test pass.
+describe("fruitColor", () => {
+    test("checking colors of fruits", () => {
+      expect(fruitColor("banana")).toEqual("yellow")
+      expect(fruitColor("apple")).toEqual("red")
+      expect(fruitColor("grape")).toEqual("purple")
+    })
+  })
 
+const fruitColor = (string) => {
+  if (string == "banana"){
+    return "yellow"
+  }
+  else if ( string == "apple"){
+    return "red"
+  }
+  else if ( string == "grape"){
+    return "purple"
+  }
+}
 // Write the test for a function called Rick that returns "Morty". Write the function that will make the test pass.
 
 // Write the test for a function called greeter that takes a name as an argument and returns a greeting with that name to the screen. Write the function that will make the test pass.
