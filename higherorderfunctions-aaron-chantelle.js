@@ -95,24 +95,24 @@
 
 
 // Create a function that takes in two arrays as arguments returns one array with no duplicate values.
-var arr1 = [3, 7, 10, 5, 4, 3] //keep as is
+// var arr1 = [3, 7, 10, 5, 4, 3] //keep as is
 
-var arr2 = [7, 8, 2, 1, 5, 4] //modify into newArray by removing any values that are also in arr1
+// var arr2 = [7, 8, 2, 1, 5, 4] //modify into newArray by removing any values that are also in arr1
 
-//make a function that takes 2 arrays as arguments
-const doubleArray =(array1, array2) => {
-  let groupedArrays = array1.concat(array2)
-  let unique = [... new Set(groupedArrays)]
-  return unique
-  //console.log(groupedArrays);
+// //make a function that takes 2 arrays as arguments
+// const doubleArray =(array1, array2) => {
+//   let groupedArrays = array1.concat(array2)
+//   let unique = [... new Set(groupedArrays)]
+//   return unique
+//   //console.log(groupedArrays);
 
-  // groupedArrays.filter( => {
-  //   //console.log(item, index, groupedArrays.indexOf(item), groupedArrays.indexOf(item) === index);
+//   // groupedArrays.filter( => {
+//   //   //console.log(item, index, groupedArrays.indexOf(item), groupedArrays.indexOf(item) === index);
     
-  //   return groupedArrays.indexOf(item) === index
-  //)}
-}
-console.log(doubleArray(arr1,arr2));
+//   //   return groupedArrays.indexOf(item) === index
+//   //)}
+// }
+// console.log(doubleArray(arr1,arr2));
 
 
 
@@ -121,11 +121,22 @@ console.log(doubleArray(arr1,arr2));
 
 
 // const doubleArray =(array1, array2) =>{
-  
 //   //filter one array by the other, and keep values that are not the same in newArray
 //   let newArray = array2.filter(num => !array1.includes(num)) //filtering out numbers that are in array1 that are also in array2
   
 //   //combine the two arrays into one
 //   return array1.concat(newArray)
 // }
-// console.log(doubleArray(arr1,arr2));
+// console.log(doubleArray(arr1,arr2))
+var arr1 = [3, 7, 10, 5, 4, 3] //keep as is
+
+var arr2 = [7, 8, 2, 1, 5, 4] 
+
+const noDupe = (array1, array2) => {
+  let newArr = array1.concat(array2)
+return newArr.filter((a, b) => newArr.indexOf(a) === b)
+
+}
+
+console.log(noDupe(arr1, arr2))
+
