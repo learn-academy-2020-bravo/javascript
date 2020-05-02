@@ -128,7 +128,7 @@
 //   return array1.concat(newArray)
 // }
 // console.log(doubleArray(arr1,arr2))
-var arr1 = [3, 7, 10, 5, 4, 3] //keep as is
+var arr1 = [3, 7, 10, 5, 4, 3] 
 
 var arr2 = [7, 8, 2, 1, 5, 4] 
 
