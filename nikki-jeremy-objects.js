@@ -28,15 +28,44 @@
 // }
 // console.log(ingredients(lunch))
 
-var animals = [
-  { name: "Waffles", type: "dog", age: 12 },
-  { name: "Fluffy", type: "cat", age: 14 },
-  { name: "Spelunky", type: "dog", age: 4 },
-  { name: "Hank", type: "cat", age: 11 },
-]
+// var animals = [
+//   { name: "Waffles", type: "dog", age: 12 },
+//   { name: "Fluffy", type: "cat", age: 14 },
+//   { name: "Spelunky", type: "dog", age: 4 },
+//   { name: "Hank", type: "cat", age: 11 },
+// ]
+//
+// const onlyCats = (array) =>{
+//   return array.filter( value => value.type === "cat")
+//
+// }
+// console.log(onlyCats(animals))
 
-const onlyCats = (array) =>{
-  return array.filter( value => value.type === "cat")
+// let author = {
+//     name: "H. G. Wells",
+//     genre: "science fiction"
+// }
+//
+// let { name, genre } = author
+//
+// console.log(`${name} is a ${genre} author`)
 
+let pokeOne = {
+    species: "Charmandar",
+    pokemon_type: "Fire"
 }
-console.log(onlyCats(animals))
+
+let pokeTwo = {
+    species: "Magikarp",
+    pokemon_type: "Water"
+}
+
+// Declare function that takes an object
+const describePokemon = (object) => {
+  let { species, pokemon_type } = object
+  // Use destructured variable to return string
+  return `${species} is a ${pokemon_type} pokemon`
+}
+
+console.log(describePokemon(pokeOne))
+console.log(describePokemon(pokeTwo))
