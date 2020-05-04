@@ -155,6 +155,18 @@ describe("doubler", () => {
 
 // Write the test for a function called multiply that takes two numbers as arguments and logs the result of one of the numbers multiplied by the other. Write the function that will make the test pass.
 
+describe("multiply", () => {
+    test("returns number multiplied by 2", () => {
+      expect(multiply(22, 3)).toEqual(66)
+      expect(multiply(99, 1)).toEqual(99)
+      expect(multiply(12, 1)).toEqual(12)
+    })
+  })
+
+  const multiply = (num1, num2) => {
+      return num1 * num2
+  }
+
 // Write the test for a function called divisibleBy that takes two numbers as arguments and returns whether the first number is evenly divisible by the second so that divisibleBy(10, 5) logs "10 is evenly divisible by 5". Write the function that will make the test pass.
 
 // Write the test for a function called fizzbuzz. If a number is a multiple of 3, replace it with the word 'fizz'. If a number is a multiple of five, replace it with the word 'buzz'. If a number is a multiple of both 3 and 5, replace it with 'fizzbuzz'. Write the function that will make the test pass.
