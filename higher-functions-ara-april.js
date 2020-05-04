@@ -72,9 +72,9 @@ var arr2 = [7, 8, 2, 1, 5, 4]
 var arr3 = arr1.concat(arr2)
 // declare a function that takes in two arrays
 const noDuplicate = (arr1, arr2) => {
-  return arr3.filter(value => arr1[value] != arr2[value])
+  // filter out the same value
+  return arr3.filter(x => arr1[x] !== arr2[x])
 
 }
-console.log(noDuplicate(arr1, arr2));
-// filter out  the same value
 // call the function
+console.log(noDuplicate(arr1, arr2));
