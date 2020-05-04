@@ -82,6 +82,9 @@ console.log(animalsNames(animals));
 // Write the code that destructures the author object and makes the following work:
 // console.log(`${name} is a ${genre} author`)
 // --> "H. G. Wells is a science fiction author"
+var { name, genre } = author
+ console.log(`${name} is a ${genre} author.`)
+
 
 //6)
 // Consider this variable:
