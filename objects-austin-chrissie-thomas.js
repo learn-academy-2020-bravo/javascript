@@ -38,11 +38,22 @@ console.log(describeProduct(product));
    type: "sandwich",
    ingredients: ["bread", "peanut butter", "banana"]
  }
-// Write the code that accesses the ingredients property.
-// Write the code that access the 3rd ingredient of the lunch object.
-// Write a function that takes the lunch object as an argument and returns "The ingredients for a PB and Banana sandwich are bread, peanut butter, and banana."
-// Update the lunch object with method that returns "The ingredients for a PB and Banana sandwich are bread, peanut butter, and banana."
 
+ // Write the code that accesses the ingredients property.
+ console.log(lunch.ingredients);
+// Write the code that access the 3rd ingredient of the lunch object.
+console.log(lunch.ingredients[2]);
+// Write a function that takes the lunch object as an argument and returns "The ingredients for a PB and Banana sandwich are bread, peanut butter, and banana."
+const lunchBreak = (obj) => {
+  return `The ingredients for a ${obj.name} ${obj.type} are ${obj.ingredients[0]}, ${obj.ingredients[1]} & ${obj.ingredients[2]}`
+}
+
+console.log(lunchBreak(lunch));
+// Update the lunch object with method that returns "The ingredients for a PB and Banana sandwich are bread, peanut butter, and banana."
+lunch.myLunch = function () {
+  return `The ingredients for a ${this.name} ${this.type} are ${this.ingredients[0]}, ${this.ingredients[1]} & ${this.ingredients[2]}`
+}
+console.log(lunch.myLunch());
 //4)
 // Consider this variable:
  var animals = [
@@ -52,8 +63,16 @@ console.log(describeProduct(product));
    { name: "Hank", type: "cat", age: 11 },
  ]
 // Create a function that takes in any array of objects and returns a new array with only those of type cat.
+const cats = (array) => {
+  return array.filter(animals => animals.type === "cat")
+}
+console.log(cats(animals));
 // Using the same array of objects above. Create a function that returns a new array with only the names of the animals.
+const animalsNames = (array) => {
+  return array.map(animals => animals.name)
 
+}
+console.log(animalsNames(animals));
 //5)
 // Consider this variable:
  let author = {
@@ -63,6 +82,9 @@ console.log(describeProduct(product));
 // Write the code that destructures the author object and makes the following work:
 // console.log(`${name} is a ${genre} author`)
 // --> "H. G. Wells is a science fiction author"
+var { name, genre } = author
+ console.log(`${name} is a ${genre} author.`)
+
 
 //6)
 // Consider this variable:

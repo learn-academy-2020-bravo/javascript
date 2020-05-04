@@ -1,11 +1,11 @@
-var person = {
-  firstName: "Arthur",
-  lastName: "Dent",
-  homePlanet: "Earth",
-  getInfo: function () {
-    return `${this.firstName} ${this.lastName} is from ${this.homePlanet}`
-  }
-}
+// var person = {
+//   firstName: "Arthur",
+//   lastName: "Dent",
+//   homePlanet: "Earth",
+//   getInfo: function () {
+//     return `${this.firstName} ${this.lastName} is from ${this.homePlanet}`
+//   }
+// }
 // Write the code that accesses the first name of the person object.
 
 // console.log(person.firstName);
@@ -13,27 +13,38 @@ var person = {
 // console.log(person.lastName);
 // // // Write the code that gives the person object a property of homePlanet and set it to 'Earth'.
 // console.log(person.homePlanet);
-console.log(person.getInfo());
+// console.log(person.getInfo());
 // Update the person object with a method that logs "Arthur Dent is from planet Earth".
 // Consider this variable:
-var product = {
-  name: "chair",
-  price: 14.99,
-  describeProduct: function () {
-    return `The product is a ${this.name}. It costs $${this.price}.`
-  }
-}
-console.log(product.describeProduct());
+// var product = {
+//   name: "chair",
+//   price: 14.99,
+//   describeProduct: function () {
+//     return `The product is a ${this.name}. It costs $${this.price}.`
+//   }
+// }
+// console.log(product.describeProduct());
 // Write a function called describeProduct takes product as an argument and logs "The product is a chair. It costs $14.99".
 // Consider this variable:
-// var lunch = {
-//   name: "PB and Banana",
-//   type: "sandwich",
-//   ingredients: ["bread", "peanut butter", "banana"]
-// }
 // Write the code that accesses the ingredients property.
+var lunch = {
+  name: "PB and Banana",
+  type: "sandwich",
+  ingredients: ["bread", "peanut butter", "banana"]
+}
+// console.log(lunch.ingredients)
 // Write the code that access the 3rd ingredient of the lunch object.
+// console.log(lunch.ingredients[2])
 // Write a function that takes the lunch object as an argument and returns "The ingredients for a PB and Banana sandwich are bread, peanut butter, and banana."
+var lunch = {
+  name: "PB and Banana",
+  type: "sandwich",
+  ingredients: ["bread", "peanut butter", "banana"],
+  makeLunch: function () {
+    return `The ingredients for a ${this.name} are ${this.ingredients.map(value => value.ingredients===)}`
+  }
+}
+console.log(lunch.makeLunch());
 // Update the lunch object with method that returns "The ingredients for a PB and Banana sandwich are bread, peanut butter, and banana."
 // Consider this variable:
 // var animals = [

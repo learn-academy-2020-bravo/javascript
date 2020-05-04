@@ -32,23 +32,23 @@
 // // Create a loop that will log the remainder of each number when divided by 2. Expected output --> 1, 1, -1, 0, 1
 // // Looping over a string. Consider this variable:
 
-var nums = [3, 57, -9, 20, 67]
+//var nums = [3, 57, -9, 20, 67]
 
 
-  console.log(nums)
+  //console.log(nums)
 // // var myString = "learn student"
 // // Write the code that will log the number of times the letter "e" occurs in the string. Expected output --> 2
-// for (let i= 1; i<21; i++){
-//   if(i%2===1){
-//     console.log("ODD")
-//   }
-//   else {
-//     console.log(i);
-//   }
-// }
-//
-// // for(let i=0; i<arr.length; i++){
-// //   if(arr[i] !==5){
-// //     console.log(arr[i])
-// //   }
-// // }
+ //for (let i= 1; i<21; i++){
+   //if(i%2===1){
+     //console.log("ODD")
+  //}
+  //else {
+    //console.log(i);
+  //}
+//}
+
+//for(let i=0; i<arr.length; i++){
+  //if(arr[i] !==5){
+  //console.log(arr[i])
+  //}
+//}
