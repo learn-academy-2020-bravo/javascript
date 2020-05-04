@@ -18,16 +18,16 @@
 // // Expected output --> [7, 3, 5, 13]
 // //
 // // Write a function that takes in an array of numbers and letters and returns a string with only the letters. HINT: Use typeof method
-var comboArr = [7, "n", "i", "c", 10, "e", false, "w", 3, "o", "r", "k"]
+// var comboArr = [7, "n", "i", "c", 10, "e", false, "w", 3, "o", "r", "k"]
 //
 
 //declare a function that takes an array
-const onlyLetters = (array) => {
-  //filter through the array to return only strings
-  return array.filter(value => typeof value === "string").join("")
-}
-//call the function
-console.log(onlyLetters(comboArr));
+// const onlyLetters = (array) => {
+//   //filter through the array to return only strings
+//   return array.filter(value => typeof value === "string").join("")
+// }
+// //call the function
+// console.log(onlyLetters(comboArr));
 
 // const onlyLetters = (string) => {
 //   let newString = []
@@ -45,6 +45,7 @@ console.log(onlyLetters(comboArr));
 // STRETCH Challenges
 // Create a function that takes in a string and returns a new string with all the vowels removed.
 var str = "javascript is awesome"
+var str2 = "fuck no it isn't"
 
 //declare a function that takes in a string
 const noVowels = (string) => {
@@ -63,18 +64,18 @@ console.log(noVowels(str));
 // Expected output --> "jvscrpt s wsm"
 
 // Create a function that takes in two arrays as arguments returns one array with no duplicate values.
-var arr1 = [3, 7, 10, 5, 4, 3]
-
-var arr2 = [7, 8, 2, 1, 5, 4]
+// var arr1 = [3, 7, 10, 5, 4, 3]
 //
-// concat two arrays
-// save the concat in a new variable
-var arr3 = arr1.concat(arr2)
-// declare a function that takes in two arrays
-const noDuplicate = (arr1, arr2) => {
-  return arr3.filter(value => arr1[value] != arr2[value])
+// var arr2 = [7, 8, 2, 1, 5, 4]
+// //
+// // concat two arrays
+// // save the concat in a new variable
+// var arr3 = arr1.concat(arr2)
+// // declare a function that takes in two arrays
+// const noDuplicate = (arr1, arr2) => {
+//   return arr3.filter(value => arr1[value] != arr2[value])
 
-}
-console.log(noDuplicate(arr1, arr2));
+// }
+// console.log(noDuplicate(arr1, arr2));
 // filter out  the same value
 // call the function
