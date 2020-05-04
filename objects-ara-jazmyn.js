@@ -40,21 +40,32 @@ var lunch = {
   name: "PB and Banana",
   type: "sandwich",
   ingredients: ["bread", "peanut butter", "banana"],
+  listIngredients: function() {
+    return this.ingredients.slice(0, -1).join(", ") + ", and " + this.ingredients[this.ingredients.length - 1]
+  },
   makeLunch: function () {
-    return `The ingredients for a ${this.name} are ${this.ingredients.map(value => value.ingredients===)}`
+    return `The ingredients for a ${this.name} ${this.type} are ${this.listIngredients()}`
   }
 }
 console.log(lunch.makeLunch());
 // Update the lunch object with method that returns "The ingredients for a PB and Banana sandwich are bread, peanut butter, and banana."
 // Consider this variable:
-// var animals = [
-//   { name: "Waffles", type: "dog", age: 12 },
-//   { name: "Fluffy", type: "cat", age: 14 },
-//   { name: "Spelunky", type: "dog", age: 4 },
-//   { name: "Hank", type: "cat", age: 11 },
-// ]
+var animals = [
+  { name: "Waffles", type: "dog", age: 12 },
+  { name: "Fluffy", type: "cat", age: 14 },
+  { name: "Spelunky", type: "dog", age: 4 },
+  { name: "Hank", type: "cat", age: 11 },
+]
 // Create a function that takes in any array of objects and returns a new array with only those of type cat.
+const onlyCats = (array) => {
+  return array.filter(value => value.type === "cat")
+}
+// console.log(onlyCats(animals));
 // Using the same array of objects above. Create a function that returns a new array with only the names of the animals.
+const onlyNames = (array) => {
+  return array.map(value => value.name)
+}
+console.log(onlyNames(animals));
 // Consider this variable:
 // let author = {
 //     name: "H. G. Wells",
