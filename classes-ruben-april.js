@@ -75,9 +75,6 @@ class Latte {
 
 
 
-
-
-
 // Write the code that makes a regular, single shot latte. Then, log the latte's profile.
 var regularLatte = new Latte("vanilla", "soy", "1")
 
@@ -86,7 +83,29 @@ console.log(regularLatte.latteProfile());
 
 // Write the code that makes a double shot hazelnut latte with almond milk. Then, log the latte's profile.
 
+var hazelNut = new Latte("hazelnut", "almond", "2")
+console.log(hazelNut.latteProfile())
+
 // Volume of a Cylinder
-// Write a class that calculates the volume of a Cylinder to four decimal places. Volume of a cylinder : V = πr2h (r is the radius and h is the height of the cylinder)
+// Write a class that calculates the volume of a Cylinder to four decimal places. `Volume of a cylinder : V = πr2h (r is the radius and h is the height of the cylinder)`
+
+class Cylinder {
+  constructor(radius, height){
+    // this.volume = volume
+    this.radius = radius
+    this.height = height
+  }
+volume(){
+  var answer = Math.PI*this.radius**2*this.height
+  // var rounded = answer.toFixed(4)
+return answer.toFixed(4)
+}
+}
+
+var mustang = new Cylinder("2", "1")
+// mustang = mustang.toFixed(4)
+
+console.log(mustang.volume())
+
 
 // Write the code that creates three unique cylinder objects
