@@ -16,6 +16,7 @@ console.log(multiply3(testArr1));
 
 
 
+}
 
 
 
