@@ -103,54 +103,72 @@ console.log(findVolume2.calculateVolume())
 // Write a variable called myCar which is an instance of the class Car
 class Car{
 constructor() {
-  this.carModel = 'tesla' 
+  this.carModel = 'Lexus'
   this.oilLevel = 100
   this.tires = 0
+  this.year = 0
+  this.carLights = "off"
+  this.carSignal = "off"
 }
 wheels() {
   this.tires = 4
 }
+carYear() {
+  this.year = 1
+}
+lights() {
+  this.carLights = "on"
+}
+signal(){
+  this.carSignal = "on"
+}
+}
+var genericCar= new Car
+genericCar.signal()
+console.log(genericCar)
 
+class myTesla extends Car{
+  constructor(){
+    super()
+    this.year = 2013
+    this.carModel = "tesla"
+    this.carLights = "off"
+  }
+}
+var tesla = new myTesla()
+tesla.signal()
+console.log(tesla)
+
+class myToyota extends Car{
+  constructor(){
+    super()
+    this.year = 1992
+    this.carModel = "Toyota Highlander"
+    this.carLights = "on"
+  }
 }
 
-let genericCar = new Car()
-//console.log(genericCar)
-//genericCar.wheels()
-//console.log(genericCar)
-//console.log(genericCar.wheels())
-// Story: As a programmer, I can give my car a model on initialization.
-// The model for the car class can be "generic car"
+class myVolkswagen extends Car{
+  constructor(){
+    super()
+    this.year = 1978
+    this.carModel = "Volkswagen Bug"
+    this.carLights = "off"
+  }
+}
+// var tesla = new myTesla()
+// console.log(tesla)
 
-// Story: As a programmer, I can give my car a year on initialization.
-// The year for the car class can be "myCar year"
+var toyota = new myToyota()
+console.log(toyota)
 
-// Story: As a programmer, I can tell how many wheels myCar has.
-// Calling the method wheels will return 4'
+var volkswagen = new myVolkswagen()
+console.log(volkswagen)
+//console.log(gener1icCar)
+//genericCar.carYear()
+// genericCar.carYear()
+// console.log(genericCar)
 
-// Story: As a programmer, I can make a Tesla car.
-// class Tesla inherits from class Car
-// Create an object called myTesla which is a instance of class Tesla
-// Story: As a programmer, I can give my Tesla a model on initialization.
-// The model can be inherited from the parent class Car by passing the model through the constructor() and super() on the child class
-// Story: As a programmer, I can give my Tesla a year on initialization.
-// The year can be inherited from the parent class Car by passing the year through the constructor() and super() on the child class
-// Story: As a programmer, I can make a Toyota car.
-// class Toyota inherits from class Car
-// create an object called myToyota which is a instance of class Toyota
-// Story: As a programmer, I can give my Toyota a model on initialization.
-// The model can be inherited from the parent class Car by passing the model through the constructor() and super() on the child class
-// Story: As a programmer, I can give my Toyota a year on initialization.
-// The year can be inherited from the parent class Car by passing the year through the constructor() and super() on the child class
-// Story: As a programmer, I can make a Volkswagen car.
-// class Volkswagen inherits from class Car
-// create an object called myVolkswagen which is a instance of class Volkswagen
-// Story: As a programmer, I can give my Volkswagen a model on initialization.
-// The model can be inherited from the parent class Car by passing the model through the constructor() and super() on the child class
-// Story: As a programmer, I can give my Volkswagen a year on initialization.
-// The year can be inherited from the parent class Car by passing the year through the constructor() and super() on the child class
-// Story: As a programmer, I can give all my cars a lights property. Lights start in the off position.
-
-// Story: As a programmer, I can turn the lights in all my cars on and off.
 
 // Story: As a programmer, I can give all my cars a signal property. Turn signal starts in the off position.
 
