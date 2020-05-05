@@ -1,93 +1,93 @@
-//Coffee Maker
-class Coffee {
-  constructor(type, cream, sugar){
-    this.type = type.toLowerCase()
-    this.cream = cream
-    this.sugar = sugar
-  }
-
-  coffeeProfile(){
-    return(`${this.type}: ${this.creams()}, ${this.sugars()}`)
-  }
-
-  creams(){
-    if (this.cream > 1){
-      return `${this.cream} creams`
-    } else {
-      return `${this.cream} cream`
-    }
-  }
-
-  sugars(){
-    if (this.sugar > 1){
-      return `${this.sugar} sugars`
-    } else {
-      return `${this.sugar} sugar`
-    }
-  }
-}
-// Write the code that makes a black coffee.
-
-var blackCoffee = new Coffee("black", 0, 0);
-//console.log(blackCoffee.coffeeProfile());
-
-// Write the code that makes a coffee with 1 cream and 2 sugars.
-
-var regularCoffee = new Coffee("regular", 1, 2);
-//console.log(regularCoffee.coffeeProfile());
-
-// Write the code that makes a coffee with 2 sugars. Then write the code that outputs the coffee's profile.
-
-var sugarCoffee = new Coffee("sugar", 0, 2);
-//console.log(sugarCoffee.coffeeProfile());
-
-// Latte Maker
-// Write a Latte class that receives a flavor, a milk type and a number of shots.
-
-class Latte {
-  constructor(flavor, type, shots) {
-    this.flavor = flavor;
-    this.type = type;
-    this.shots = shots;
-  }
-
-  latteProfile(){
-    return(`${this.flavor} flavor, ${this.type} type, ${this.shots} shots`)
-  }
-}
-
-// Write a method for your Latte class that outputs the latte's profile.
+// //Coffee Maker
+// class Coffee {
+//   constructor(type, cream, sugar){
+//     this.type = type.toLowerCase()
+//     this.cream = cream
+//     this.sugar = sugar
+//   }
 //
-// Write the code that makes a regular, single shot latte. Then, log the latte's profile.
-
-var regularLatte = new Latte("Mint", "Regular", 1)
-//console.log(regularLatte.latteProfile());
-
-// Write the code that makes a double shot hazelnut latte with almond milk. Then, log the latte's profile.
-
-var specialLatte = new Latte("Hazelnut", "Almond Milk", 2)
-//console.log(specialLatte.latteProfile());
-
-// Volume of a Cylinder
-// Write a class that calculates the volume of a Cylinder to four decimal places. Volume of a cylinder : V = πr2h (r is the radius and h is the height of the cylinder)
-
-class Cylinder {
-  constructor (radius, height){
-    this.radius = radius;
-    this.height = height;
-  }
-
-  volume()  {
-    return (Math.PI * this.radius * this.radius * this.height).toFixed(4);
-  }
-}
-
-// Write the code that creates three unique cylinder objects
-var cylinder1 = new Cylinder (2, 10);
-//console.log(cylinder1.volume());
-var cylinder2 = new Cylinder (5, 3);
-//console.log(cylinder2.volume());
-var cylinder3 = new Cylinder (1, 6);
+//   coffeeProfile(){
+//     return(`${this.type}: ${this.creams()}, ${this.sugars()}`)
+//   }
+//
+//   creams(){
+//     if (this.cream > 1){
+//       return `${this.cream} creams`
+//     } else {
+//       return `${this.cream} cream`
+//     }
+//   }
+//
+//   sugars(){
+//     if (this.sugar > 1){
+//       return `${this.sugar} sugars`
+//     } else {
+//       return `${this.sugar} sugar`
+//     }
+//   }
+// }
+// // Write the code that makes a black coffee.
+//
+// var blackCoffee = new Coffee("black", 0, 0);
+// //console.log(blackCoffee.coffeeProfile());
+//
+// // Write the code that makes a coffee with 1 cream and 2 sugars.
+//
+// var regularCoffee = new Coffee("regular", 1, 2);
+// //console.log(regularCoffee.coffeeProfile());
+//
+// // Write the code that makes a coffee with 2 sugars. Then write the code that outputs the coffee's profile.
+//
+// var sugarCoffee = new Coffee("sugar", 0, 2);
+// //console.log(sugarCoffee.coffeeProfile());
+//
+// // Latte Maker
+// // Write a Latte class that receives a flavor, a milk type and a number of shots.
+//
+// class Latte {
+//   constructor(flavor, type, shots) {
+//     this.flavor = flavor;
+//     this.type = type;
+//     this.shots = shots;
+//   }
+//
+//   latteProfile(){
+//     return(`${this.flavor} flavor, ${this.type} type, ${this.shots} shots`)
+//   }
+// }
+//
+// // Write a method for your Latte class that outputs the latte's profile.
+// //
+// // Write the code that makes a regular, single shot latte. Then, log the latte's profile.
+//
+// var regularLatte = new Latte("Mint", "Regular", 1)
+// //console.log(regularLatte.latteProfile());
+//
+// // Write the code that makes a double shot hazelnut latte with almond milk. Then, log the latte's profile.
+//
+// var specialLatte = new Latte("Hazelnut", "Almond Milk", 2)
+// //console.log(specialLatte.latteProfile());
+//
+// // Volume of a Cylinder
+// // Write a class that calculates the volume of a Cylinder to four decimal places. Volume of a cylinder : V = πr2h (r is the radius and h is the height of the cylinder)
+//
+// class Cylinder {
+//   constructor (radius, height){
+//     this.radius = radius;
+//     this.height = height;
+//   }
+//
+//   volume()  {
+//     return (Math.PI * this.radius * this.radius * this.height).toFixed(4);
+//   }
+// }
+//
+// // Write the code that creates three unique cylinder objects
+// var cylinder1 = new Cylinder (2, 10);
+// //console.log(cylinder1.volume());
+// var cylinder2 = new Cylinder (5, 3);
+// //console.log(cylinder2.volume());
+// var cylinder3 = new Cylinder (1, 6);
 //console.log(cylinder3.volume());
 
 // Story: As a programmer, I can make a car.
@@ -97,6 +97,8 @@ class Car{
     this.model = "generic car"
     this.year = "2 years old"
     this.lights = "off"
+    this.turnSignal = "off"
+    this.speed = 0
   }
   lightSwitch(){
     if (this.lights == "off"){
@@ -106,17 +108,22 @@ class Car{
     this.lights = "off"
   }
 
+
   wheels(){
     return 4
+  }
+
+  carInfo(){
+    return `the car model is ${this.model}, the car year is ${this.year}, the cars lights are ${this.lights}, the cars turnsignal is ${this.turnSignal},the cars speed is at ${this.speed} mph`
   }
 }
 
 var mycar = new Car
-    console.log(mycar)
-    mycar.lightSwitch()
-    console.log(mycar)
-    mycar.lightSwitch()
-    console.log(mycar)
+    // console.log(mycar.carInfo())
+    // mycar.lightSwitch()
+    // console.log(mycar)
+    // mycar.lightSwitch()
+    // console.log(mycar)
 // Story: As a programmer, I can give my car a model on initialization.
 // The model for the car class can be "generic car" -
 
@@ -134,10 +141,21 @@ var mycar = new Car
      this.model = "tesla"
      this.year = "1 year old"
    }
+
+   acceleration(){
+     this.speed += 10
+   }
+
+   brake(){
+     this.speed -= 7
+     if(this.speed < 0) this.speed = 0
+   }
  }
  var myTesla = new Tesla
+ console.log(myTesla.wheels())
 
- console.log(myTesla)
+
+ // console.log(myTesla)
 
 // Create an object called myTesla which is a instance of class Tesla-
 
@@ -155,9 +173,18 @@ class Toyota extends Car{
     this.model = "camery"
     this.year = "1989"
   }
+  acceleration(){
+    this.speed += 5
+  }
+
+  brake(){
+    this.speed -= 2
+    if(this.speed < 0) this.speed = 0
+  }
+
 }
 var myToyota = new Toyota
-console.log(myToyota)
+// console.log(myToyota)
 
 // create an object called myToyota which is a instance of class Toyota
 
@@ -175,10 +202,22 @@ console.log(myToyota)
      this.model = "wagon"
      this.year = "2017"
    }
+   acceleration(){
+     this.speed += 7
+   }
+
+   brake(){
+     this.speed -= 5
+     if(this.speed < 0) this.speed = 0
+   }
+
  }
 
  var myVolkswagon = new Volkswagon
- console.log(myVolkswagon)
+ myVolkswagon.acceleration()
+ myVolkswagon.brake()
+ myVolkswagon.brake()
+ console.log(myVolkswagon.carInfo())
 // create an object called myVolkswagen which is a instance of class Volkswagen
 
 // Story: As a programmer, I can give my Volkswagen a model on initialization.
